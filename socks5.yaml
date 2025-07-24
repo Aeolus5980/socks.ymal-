@@ -1,19 +1,8 @@
 proxies:
-  - name: "家宽SOCKS5"  # 代理名称（可自定义）
+  - name: "家宽代理"
     type: socks5
-    server: 207.228.42.131
-    port: 46688
-    username: 00QDXWq85Zg8KNo
-    password: 9qTGqHqv5TDFFTX
-    udp: true  # 支持 UDP（如游戏加速）
-
-proxy-groups:
-  - name: "🚀 代理选择"  # 代理组名称
-    type: select  # 手动选择模式
-    proxies:
-      - "家宽SOCKS5"  # 必须与 proxies 中的 name 一致
-      - DIRECT  # 直连选项
-
-rules:
-  - GEOIP,CN,DIRECT  # 国内网站直连
-  - MATCH,🚀 代理选择  # 其他流量走代理
+    server: 207.228.42.131  # 替换为你的IP
+    port: 46688             # 替换为你的端口
+    username: 00QDXWq85Zg8KNo  # 替换为你的账号
+    password: 9qTGqHqv5TDFFTX  # 替换为你的密码
+    udp: true               # 如需UDP支持
